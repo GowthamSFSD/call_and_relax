@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.tab-button {
+    width: 75px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 10px;
+  }
+  
+  .active-button {
+    border-bottom: 1.5px solid #2563eb;
+    color: #2563eb;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .tab-button {
+      width: 100px;
+      height: 30px;
+      font-size: 17px;
+    }
+  }

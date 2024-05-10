@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import logo from "./Roxiler.jpg"
+import { AiOutlineMenu } from "react-icons/ai";
+import AppStore from './component/Home'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <nav className="nav-bar">
+      <div className="responsive-nav">
+        <div className="logo-container">
+          <img alt="logo" src={logo}/>
+          <p className="app-title">Gokul</p>
+        </div>
+        <button className="menu-button"><AiOutlineMenu className="menu-logo"/></button>
+      </div>
+     
+    </nav>
+     <hr/>
+     <AppStore/>
+     </>
   );
 }
 
